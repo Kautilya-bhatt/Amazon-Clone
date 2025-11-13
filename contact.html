@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us — Mock Amazon</title>
+  <link rel="stylesheet" href="Index.css">
+   <!-- Amazon icon -->
+     <link rel="icon" href="amz-images/amazonicon.png">
+
+    <!-- Correct Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    
+  <style>
+    /* Reset & base */
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+.navsearch .select option{
+  width: 20px;
+  overflow: hidden;
+}
+/* --- Main layout --- */
+.main {
+    max-width: 1200px;
+    margin: 22px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+}
+
+/* Sidebar */
+.side {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 16px;
+}
+.side h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.side ul {
+    list-style: none;
+}
+.side li {
+    padding: 10px 6px;
+    border-radius: 4px;
+    color: #111;
+    cursor: pointer;
+}
+.side li:hover {
+    background: #f7f7f7;
+}
+.side .phone {
+    margin-top: 12px;
+    background: #fff8e6;
+    border: 1px solid #f1e0b4;
+    padding: 12px;
+    border-radius: 6px;
+}
+.side .phone strong {
+    display: block;
+}
+
+/* Main content */
+.card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 18px;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.contact-method {
+    border: 1px solid #e9e9e9;
+    padding: 12px;
+    border-radius: 6px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-method h4 {
+    font-size: 15px;
+}
+.contact-method p {
+    color: #555;
+    font-size: 13px;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #007185;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* Contact form */
+form .row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+form label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+.muted {
+    color: #666;
+    font-size: 13px;
+}
+footer{
+  margin-top: 5px;
+}
+
+.foot-panel1{
+background-color: #37475a;
+color: white;
+height: 50px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.85rem;
+
+}
+.foot-panel1 a{
+    text-decoration: none;
+    color: white;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    height: 390px;
+    justify-content: space-evenly;
+
+   
+}
+ul{
+    margin-top: 40px;
+   
+
+    
+
+}
+ul a{
+        color: #dddddd;
+    font-size: 0.85rem;
+    display: block;
+    margin: 10px 10px 10px 0px;
+
+    text-decoration: none;
+     text-align: left;
+   
+}
+
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.foot-panel3 .amz-logo{
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Select-opt{
+  height: 30px;
+  width: 120px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #dddddd;
+}
+.Select-opt option{
+  background-color: #e3e6e6;
+  color: #222f3d;
+
+}
+.Select-opt{
+  padding: inherit;
+}
+#select{
+  width: 45px;
+  border-radius: 4px 0px 0px 4px ;
+}
+.sign-button button{
+  height: 32px;
+  width: 220px;
+  background-color: #ffce12;
+  border-radius: 16px;
+  font-family: amazonember;
+}
+.sign-button a{
+    text-decoration: none;
+    color: black;
+}
+.sign-section{
+  font-family: Amazonember;
+}
+.sign-section a{
+  text-decoration: underline;
+  color: rgba(13, 110, 253, 1);
+}
+
+
+  /* Extra responsive fixes for contact.html */
+
+@media (max-width: 992px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .amazon-navbar {
+    flex-direction: column;
+  }
+  .navsearch {
+    width: 100%;
+  }
+  .panel {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .foot-panel2 {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .side {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  form .row {
+    flex-direction: column;
+  }
+  input, select, textarea {
+    font-size: 13px;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .foot-panel2{
+    height: auto;
+  }
+  .foot-panel3{
+    height: auto;
+  }
+  .Select-opt{
+    margin-top: 10px;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+ <!-- navbar -->
+      <!-- PANEL 1 -->
+
+      <div class="amazon-navbar">
+        <!-- box1 -->
+        <div class="nav-logo my-border">
+          <div class="logo"><a href="Index.html"><img class="logo"src="amz-images/amazon_logo.png" alt="?"></a></div>
+        </div>
+
+        <!-- Deliver box -->
+        <div id="main-address" class="my-border">
+          <p id="text1" onclick="window.alert('Sorry content is not available')">Deliver to</p>
+          <div id="address2">
+            <i class="fa-solid fa-location-dot"></i>
+            <p id="text2" onclick="window.alert('Sorry content is not available')">India</p>
+          </div>
+        </div>
+
+        <!-- Search box -->
+        <form class="search-area">
+          <div class="navsearch">
+            <select id="select">
+              <option class="my-option1">All</option>
+              <option class="my-option" >Electronics</option>
+              <option class="my-option">Furnitures</option>
+              <option class="my-option">Interior designs</option>
+              <option class="my-option">Games</option>
+              <option class="my-option">Beauty</option>
+              <option class="my-option">Books</option>
+              <option class="my-option">Clothings & accessories </option>
+              <option class="my-option">Cars & Motorbikes</option>
+              <option class="my-option">Watches</option>
+              <option class="my-option">Music</option>
+            </select>
+            <input placeholder="Search amazon.in" class="search" />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </form>
+
+          <!-- Accounts & Sign-in -->
+        <div class="nav-sign-in my-border">
+          <a href="login.html">
+          <p class="Accounts">Hello, sign-in</p>
+          <p class="Accounts1">Accounts & Lists</p>
+          </a>
+        </div>
+        <a href="cart.html">
+        <div class="nav-sign-in my-border">
+          <p class="Accounts">Returns</p>
+          <p class="Accounts1">& Orders</p>
+          </a>
+          
+        </div>
+        
+        
+
+        <!-- box5 -->
+         <a href="cart.html" style="text-decoration: none; color: rgb(255, 255, 255);">
+        <div class="cart my-border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Cart</p>
+        </div>
+      </div>
+      </a>
+
+      <!-- PANEL 2 -->
+      <!-- Select option-->
+      <div class="panel">
+        <div class="option">
+          <i class="fa-solid fa-list"></i>
+          All
+        </div>
+        <!-- lis -->
+        <div class="lis">
+          <a href="#" class="amz_opt">MX players</a>
+          <a href="#" class="amz_opt">Sells</a>
+          <a href="#" class="amz_opt">Bestsellers</a>
+          <a href="#" class="amz_opt">Today's Deals</a>
+          <a href="#" class="amz_opt">Mobiles</a>
+        </div>
+        <!-- Deals -->
+        <div class="deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="contact-heading">
+    <div class="hero-inner">
+      <div>
+        <h1 id="contact-heading">Contact Us</h1>
+        <p>Need help? Find answers, contact options, and ways to reach customer service.</p>
+      </div>
+      <div style="margin-left:auto" class="muted">We're available 24/7 for many support topics.</div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Sidebar -->
+    <aside class="side" aria-labelledby="help-topics">
+      <h3 id="help-topics">Help topics</h3>
+      <ul>
+        <li>Track order</li>
+        <li>Returns & Refunds</li>
+        <li>Payments & Gift Cards</li>
+        <li>Manage your account</li>
+        <li>Prime & Membership</li>
+        <li>Digital Services & Devices</li>
+      </ul>
+
+      <div class="phone" aria-hidden>
+        <strong>Call us</strong>
+        <div class="muted">Available 24 hours — English</div>
+        <div style="margin-top:8px;font-weight:700">1800-123-456</div>
+      </div>
+
+    </aside>
+
+    <!-- Content -->
+    <section>
+      <div class="card" aria-labelledby="choose-method">
+        <h2 id="choose-method">How would you like to contact us?</h2>
+        <p class="muted" style="margin-bottom:12px">Choose an option and we'll guide you to the fastest help.</p>
+
+        <div class="contact-grid">
+          <div class="contact-method">
+            <div>
+              <h4>Phone</h4>
+              <p class="muted">Call our customer service number to speak with an agent.</p>
+            </div>
+            <div>
+              <a class="btn" href="#call">Call 1800-123-456</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div>
+              <h4>Chat</h4>
+              <p class="muted">Start a live chat with an agent — quick help for orders and more.</p>
+            </div>
+            <div>
+              <a class="btn" href="#chat">Start Chat</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div>
+              <h4>Email</h4>
+              <p class="muted">Send us a message and we'll reply by email.</p>
+            </div>
+            <div>
+              <a class="btn" href="#form">Send Email</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div>
+              <h4>Help articles</h4>
+              <p class="muted">Try our help articles for common issues — fast self-service.</p>
+            </div>
+            <div>
+              <a class="btn" href="#help">Browse Help</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form card -->
+      <div class="card" style="margin-top:18px" id="form">
+        <h3>Send us a message</h3>
+        <p class="muted">Fill out the form below and an agent will follow up by email.</p>
+
+        <form action="#" method="post" novalidate>
+          <div class="row">
+            <div style="flex:1">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div style="width:220px">
+              <label for="order">Order # (optional)</label>
+              <input id="order" name="order" type="text" placeholder="e.g. 123-1234567-1234567" />
+            </div>
+          </div>
+
+          <div style="margin-bottom:12px">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div style="margin-bottom:12px">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option>Order issues</option>
+              <option>Return or refund</option>
+              <option>Payment</option>
+              <option>Account</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:12px">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about the issue" required></textarea>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:center">
+            <button class="btn" onclick="submit">Send message</button>
+            <div class="muted">We typically respond within 24-48 hours.</div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+  <div class="personalize">
+        <div class="sign-head">
+           <h2>See personalized recommendations</H2>
+        </div>
+        
+         
+         <div class="sign-button">
+          <button><a href="login.html">Sign in</a></button>
+         </div>
+         <div class="sign-section"> <span>New customers?</span>
+         <a href="login.html">Start Here</a>
+        </div>
+        
+      </div>
+        
+   <div class="foot-panel1">
+    <a href="Index.html">Back to top</a></div>
+   <div class="foot-panel2">
+     <ul>
+      <span>Get to know us</span>
+      <a href="Index.html">Careers</a>
+      <a href="Index.html">Blog</a>
+      <a href="Index.html"> About Amazon</a>
+      <a href="Index.html">Investor Relations</a>
+      <a href="Index.html">Amazon Devices</a>
+      <a href="Index.html">Amazon Science</a>
+      
+   </ul>
+
+   <ul>
+      <span>Connect with Us</span>
+      <a href="Index.html">Facebook</a>
+      <a href="Index.html">Twitter</a>
+      <a href="Index.html"> Instagram</a>
+      
+      
+   </ul>
+  
+   <ul>
+      <span>Make money with us</span>
+      <a href="Index.html">Sell on Amazon</a>
+      <a href="Index.html">Sell under Amazon Accelerator</a>
+      <a href="Index.html"> Protect and Build Your Brand</a>
+      <a href="Index.html">Amazon Global Selling</a>
+      <a href="Index.html">Amazon Pay on Merchants</a>
+      <a href="Index.html">Become an Affiliate</a>
+       <a href="Index.html">Supply to Amazon</a>
+      <a href="Index.html">Fulfilment by Amazon-</a>
+       <a href="Index.html">Advertise Your Products</a>
+ 
+      
+   </ul>
+ 
+   <ul>
+      <span>Let Us Help You</span>
+      <a href="Index.html">Your Account</a>
+      <a href="Index.html">Returns Centre</a>
+      <a href="Index.html">Recalls and Product Safety Alerts</a>
+      <a href="Index.html">100% Purchase Protection</a>
+      <a href="Index.html">Amazon App Download</a>
+      <a href="contact.html">Help</a>
+      
+   </ul>
+  
+   
+</div>
+<div class="foot-panel3">
+   <div class="amz-logo"><a href="Index.html"><img class="amz-logo"src="amz-images/amazon_logo.png" alt="?"></a></div>
+    
+  <select class="Select-opt">
+ Country
+    <option>India</option>
+     <option>Australia</option>
+      <option>Austria</option>
+       <option>Canada</option>
+        <option>Thailand</option>
+  </select>
+  <select class="Select-opt">
+ Language
+    <option>English</option>
+     <option>Marathi</option>
+      <option>Punjabi</option>
+       <option>Tamil</option>
+        <option>Gujrati</option>
+  </select>
+
+
+</div>
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Index.css">
+    <!-- Amazon icon -->
+     <link rel="icon" href="amz-images/amazonicon.png">
+    <style>
+        body{
+          display: flex;
+            justify-content: center;
+            align-items: center;   
+            color: #0f1111;
+        }
+        .main-login{
+               width: 390px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        
+         
+        
+        }
+        .login-image img{
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .login-container{
+            border: 1px solid rgba(0, 0, 0, 0.171);
+                border-radius: 10px;
+                padding: 20px 20px 20px 20px ;
+            
+
+        }
+        
+        .login-container p{
+            margin-top: 10px;
+        }
+        .login-container h2{
+            font-weight: 530;
+
+        }
+        .login-container p{
+            font-size: 15px;
+            margin-top: 14px;
+        }
+         .login-container p a{
+            color: #2162a1;
+            text-decoration: underline;
+            
+        
+         }
+         .mobile{
+            margin-top: 10px;
+         }
+         .mobile input{
+            margin-top: 9px;
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(15 17 17 / 15%) inset;
+            border: 2px solid rgba(0, 0, 0, 0.171);
+         }
+         .mobile label{
+            font-weight: 800;
+            font-size: 15.5px;
+
+         }
+         .login-container input{
+          color: rgba(0, 0, 0, 0.836);
+          font-size: medium;
+          padding-left: 10px;
+          font-weight: 800;
+         }
+         .login-container button{
+            width: 100%;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+            text-align: center;
+            background-color: #f0c14b;
+            margin-top: 10px;
+         }
+          button .text{
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .buying{
+            height: 30%;
+            width: 100%;
+            margin-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.171);
+             font-size: 16px;
+            font-weight: 600;
+             padding-top: 20px;
+             line-height: 26px;
+          }
+         
+          .buying a{
+            font-size: 17px;
+            color: #2162a1;
+            text-decoration: none;
+            font-weight: 300;
+
+          }
+          .buying  a:hover{
+            text-decoration: underline black;
+            color: black;
+          }
+          .log-sec2{
+            height: 150px;
+            width: 1300px;
+            border-top: 2px solid  rgba(0, 0, 0, 0.171);
+            margin-top: 50px;
+          }
+          .log-sec2 .link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2162a1;
+            font-size: 14px;
+            margin-top: 40px;
+
+            
+          }
+          .link a{
+            margin-left: 16px;
+            text-decoration: none;
+          }
+          .link a:hover{
+            color: #0f1111;
+            text-decoration: underline black;
+          }
+          .log-sec2 p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 13px;
+            margin-top: 10px;
+            margin-left: 8px;
+          }
+          body{
+            background-color: white;
+          }
+          /* Responsive Media Queries for login.html */
+
+@media (max-width: 768px) {
+  .main-login {
+    width: 90%;
+  }
+  .login-container {
+    width: 100%;
+  }
+  .log-sec2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+  }
+  .login-container h2 {
+    font-size: 1.1rem;
+  }
+  .mobile label {
+    font-size: 14px;
+  }
+  .mobile input {
+    height: 35px;
+  }
+  .login-container button {
+    height: 32px;
+    font-size: 0.85rem;
+  }
+}
+
+
+  
+
+        
+    </style>
+</head>
+<body>
+    <div class="main-login">
+       
+        <div class="login-image">
+        <img src="amz-images/amz-login.PNG">
+        </div>
+        <div class="login-container">
+            <H2>Sign in or create account</H2>
+            <div class="mobile"><label> Enter mobile number or email</label>
+            <input type="text">
+            </div>
+            <button onclick="window.location.href='Index.html'"><span class="text">Continue</span></button>
+
+            <p>By continuing, you agree to Amazon's<a href="#"> Conditions of Use </a>and <a href="#"> Privacy Notice.</a> </p>
+            <div class="buying">
+                <label>Buying for work?</label>
+                <br>
+                <a href="#">Create a free business account</a> 
+              
+
+            </div>
+
+        </div>
+        
+        <div class="log-sec2">
+          <div class="link">
+            <a href="#">Condition of use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="contact.html">Help</a>
+          </div>
+          <p>© 1996–2025, Amazon.com, Inc. or its affiliates</p>
+
+        </div>
+       
+    
+
+    
+</body>
+</html>
